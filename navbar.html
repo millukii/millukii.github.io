@@ -1,0 +1,59 @@
+<style>
+  nav {
+    background: #333;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+
+  nav li a:hover {
+    background: tomato;
+    color: white;
+  }
+
+  .navbar {
+    background-color: orangered;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .navbar-logo {
+    height: 100%;
+  }
+
+  /* @media-query */
+
+  @media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+</style>
+<nav>
+  <img class="logo" src="logo-menu-letras.jpg">
+  <ul>
+    <li><a>Inicio</a></li>
+    <li><a>Contacto</a></li>
+  </ul>
+</nav>
+<nav class="navbar">
+  <img class="logo navbar-logo" src="logo-menu-letras.jpg">
+  <ul class="nav-links">
+    <li class="nav-items"><a href="index.html">Inicio</a></li>
+    <li class="nav-items"><a>Contacto</a></li>
+  </ul>
+</nav>
